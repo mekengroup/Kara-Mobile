@@ -58,6 +58,8 @@ class Touristique extends StatelessWidget {
               buildCard("Détails : ","Koutammakou", "assets/touristique1.png"),
               buildCard("Détails : ","Parc Sarakawa", "assets/touristique2.png"),
             ],),
+          const SizedBox(height: 40),
+
 
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -66,12 +68,14 @@ class Touristique extends StatelessWidget {
               buildCard("Détails : ","Musee Africart", "assets/touristique4.png"),
 
             ],),
+          const SizedBox(height: 40),
+
 
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              buildCard("Détails : ","Fazao-Malfakassa National Park", "assets/touristique5.png"),
+              buildCard("Détails : ","Fazao-Malfakassa Park", "assets/touristique5.png"),
               buildCard("Détails : ","Le monument Sarakawa", "assets/touristique6.png"),
 
             ],),
@@ -143,7 +147,7 @@ class Touristique extends StatelessWidget {
 
   buildCard(String detail,String titre, String image) => Container(
       width: 160,
-      height: 250,
+      height: 300,
 
       margin: const EdgeInsets.only(right: 12),
       child: Column(

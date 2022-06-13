@@ -63,16 +63,19 @@ class Sante extends StatelessWidget {
             children: [
 
               buildCard("CONTACT: +228 90 10 08 82","CROIX ROUGE", "assets/sante1.png"),
+              const SizedBox(width: 40),
               buildCard("CONTACT: +228 26 60 60 48","CHU KARA", "assets/sante2.png"),
 
             ],),
 
           const SizedBox(height: 30),
 
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               buildCard("CONTACT: +228 26 60 02 46","CHR KARA", "assets/sante3.png"),
+              const SizedBox(width: 40),
               buildCard("CONTACT: +228 26 60 11 59","P M I - SOS", "assets/sante4.png"),
 
             ],),
@@ -83,6 +86,7 @@ class Sante extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               buildCard("CONTACT: +228 26 60 60 28","Clinique ma vie", "assets/sante6.png"),
+              const SizedBox(width: 40),
               buildCard("CONTACT: +228 24 45  83 52","Clinique tout est grace", "assets/sante5.png"),
 
             ],),
@@ -94,6 +98,7 @@ class Sante extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               buildCard("CONTACT: +228 26 60 02 46","Hôpital chinois", "assets/sante7.png"),
+              const SizedBox(width: 40),
               buildCard("CONTACT: +228 26 61 43 20","Cbt. méd Hippocrate", "assets/sante8.png"),
 
             ],),

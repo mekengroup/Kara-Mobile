@@ -227,7 +227,7 @@ class Hotels extends StatelessWidget {
 
   buildCard(String detail,String contact,String lieu,String titre, String image) => Container(
       width: 170,
-      height: 450,
+      height: 470,
       decoration: BoxDecoration(
 
       ),

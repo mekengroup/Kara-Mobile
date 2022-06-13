@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 class Chambre extends StatelessWidget {
   const Chambre({Key? key}) : super(key: key);
+
+  void _launchUrl(Uri url) async {
+    if (!await launchUrl(url)) throw 'Could not launch $url';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +59,8 @@ class Chambre extends StatelessWidget {
 
 
               Container(
-                child: Column(
+                child:
+                Column(
                   children: [
                     Image.asset('assets/chambre1.png'),
                     const SizedBox(height: 16.0),
@@ -100,7 +107,40 @@ class Chambre extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 30.0),
+
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {
+                    final Uri url = Uri.parse('tel:+1-555-010-999	');
+                    _launchUrl(url);
+                  },
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 90.0),
 
 
               Container(
@@ -152,7 +192,34 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 90.0),
 
               Container(
                 child: Column(
@@ -203,7 +270,35 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 90.0),
 
               Container(
                 child: Column(
@@ -254,7 +349,37 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 90.0),
+
 
               Container(
                 child: Column(
@@ -304,7 +429,38 @@ class Chambre extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 30.0),
+
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 90.0),
+
 
               Container(
                 child: Column(
@@ -355,7 +511,35 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 90.0),
 
               Container(
                 child: Column(
@@ -406,7 +590,37 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 90.0),
+
 
               Container(
                 child: Column(
@@ -457,7 +671,36 @@ class Chambre extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 30.0),
+              const SizedBox(height: 20.0),
+
+
+              Container(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 280,
+                    padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.teal, width:2),
+                      borderRadius: const BorderRadius.all(Radius.circular(5),
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text('Demander la disponibilité',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal,
+                        ),
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 90.0),
 
 
             ],),
