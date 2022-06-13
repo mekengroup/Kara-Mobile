@@ -64,7 +64,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child: buildCard("Details:Chambre simple, à partir de 18 500 FCFA,bungalow luxe à partir de 40 000 FCFA selon la catégorie et la rénovation. Petit déjeuner buffet et menu du jour disponible.","Contact: +228 26 60 05 16","Adresse: Bp 5, Kara Togo","Hotel KARA", "assets/hotelKara.png"),
 
@@ -72,7 +72,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child: buildCard("Détails:Doté d'un bar, d'une terrasse et offrant une vue sur la ville, le Meka Hotel est situé à Kara, à 2,4 km du bureau de l'immigration. Il propose un restaurant, une réception ouverte 24h/24.","Contact:+228 26 61 06 14","Adresse: Kara Togo","Meka Hotel", "assets/mekahotel.png"),
 
@@ -87,7 +87,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child: buildCard("Détails:Hôtel chaleureux niché dans une région montagneuse,c'est un point incontournable des touristes. En effet de sa proximité aux sites touristiques et lieux de festivités, l'hôtel est un carrefour immanquable.","Contact: +228 98 25 07 58","Adresse: 48, Pya, Kara, Togo","Hotel KAMA'AKA", "assets/hotelkama.png"),
 
@@ -96,7 +96,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child:buildCard("Détails:Chambres ventilées autour de 8 000 FCFA, climatisées (TV, téléphone, eau chaude) entre 16 000 et 40 000 FCFA. Petit déjeuner complet autour de 2 500 FCFA, plats à 4 000 FCFA en moyenne. Bar.","Contact: +228 26 60 19 00","Adresse:Quartier Cofac","Hotel la Concorde", "assets/concorde.png"),
 
@@ -112,7 +112,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child:buildCard("Détails: Très agréable dans un cadre verdoyant,la piscine est un atout pour cette structure  dont le personnel est très charmant avec des chambre confortables.", "Contact: +228 93 68 72 72","Addresse:Unnaed road","Hotel Sainte-Brigitte", "assets/hotelbri.png"),
 
@@ -122,7 +122,7 @@ class Hotels extends StatelessWidget {
 
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Chambre()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
                     child:buildCard("Details: Hôtel très propre, confortable. Personnel accueillant et disponible.Débit wifi bien. La cuisine est très bonne et les tarifs sont abordables.","Contact: +228 26 60 02 94","Adresse:Kara Tomde ","Hotel Etoile de la Kozah", "assets/hoteletoile.png"),
 
@@ -331,7 +331,7 @@ class Hotels extends StatelessWidget {
                         color:Colors.white,
                     ),
                     ),
-                  Icon(Icons.maps_home_work),
+                  Icon(Icons.location_on),
 
                 ],
 

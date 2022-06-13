@@ -151,7 +151,7 @@ class Lieu extends StatelessWidget {
                           color:Colors.white,
                         ),
                       ),
-                      Icon(Icons.maps_home_work),
+                      Icon(Icons.location_on),
 
                     ],
 
