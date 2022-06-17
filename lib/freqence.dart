@@ -16,7 +16,7 @@ class Frequence extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor: Colors.teal,
+        backgroundColor: Color.fromARGB(255, 1, 186, 94),
 
       ),
 
@@ -116,7 +116,7 @@ class Frequence extends StatelessWidget {
       decoration: BoxDecoration(
           border: Border.all(
             width: 2,
-            color: Colors.yellow,
+            color: Color.fromARGB(255, 255, 206, 21),
           )
       ),
 
@@ -129,7 +129,7 @@ class Frequence extends StatelessWidget {
             nom,
             style: const TextStyle(
               fontSize: 8,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 1, 186, 94),
 
             ) ,
           ),
@@ -140,7 +140,7 @@ class Frequence extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 10,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 1, 186, 94),
 
             ) ,
 

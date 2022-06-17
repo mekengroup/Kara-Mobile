@@ -250,7 +250,7 @@ class Sante extends StatelessWidget {
       decoration: BoxDecoration(
           border: Border.all(
             width: 2,
-            color: Colors.yellow,
+            color: Color.fromARGB(255, 255, 206, 21),
           )
       ),
 
@@ -263,7 +263,7 @@ class Sante extends StatelessWidget {
             nom,
             style: const TextStyle(
               fontSize: 8,
-              color: Colors.teal,
+              color:  Color.fromARGB(255, 1, 186, 94),
 
             ) ,
           ),

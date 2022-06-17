@@ -28,9 +28,6 @@ class Connexion extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
 
   final String title;
 
@@ -71,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final loginButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Colors.teal,
+      color: Color.fromARGB(255, 255, 206, 21),
 
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
@@ -184,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.teal,
+                      color: Color.fromARGB(255, 1, 186, 94),
 
                     ),),
                 ),

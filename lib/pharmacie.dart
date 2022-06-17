@@ -16,7 +16,7 @@ class Pharmacie extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor: Colors.teal,
+        backgroundColor:  Color.fromARGB(255, 1, 186, 94),
 
       ),
 
@@ -31,7 +31,7 @@ class Pharmacie extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color: Colors.teal,
+              color:  Color.fromARGB(255, 1, 186, 94),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -85,7 +85,7 @@ class Pharmacie extends StatelessWidget {
               textAlign: TextAlign.center,
               style:TextStyle(
                 fontSize: 30,
-                color: Colors.teal,
+                color: Color.fromARGB(255, 1, 186, 94),
                 fontWeight: FontWeight.bold,
 
 
@@ -158,7 +158,7 @@ class Pharmacie extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 12,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 1, 186, 94),
 
             ) ,
           ),
@@ -169,8 +169,7 @@ class Pharmacie extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 12,
-              color: Colors.teal,
-
+              color: Color.fromARGB(255, 1, 186, 94),
             ) ,
           ),
 
@@ -178,7 +177,7 @@ class Pharmacie extends StatelessWidget {
             adresse,
             style: const TextStyle(
               fontSize: 12,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 1, 186, 94),
 
             ) ,
           ),
@@ -194,8 +193,8 @@ class Pharmacie extends StatelessWidget {
               width: 135,
               padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
               decoration: BoxDecoration(
-                color: Colors.teal,
-                border: Border.all(color: Colors.teal, width:2),
+                color: Color.fromARGB(255, 1, 186, 94),
+                border: Border.all(color: Color.fromARGB(255, 1, 186, 94),width:2),
                 borderRadius: const BorderRadius.all(Radius.circular(5),
                 ),
               ),
@@ -236,7 +235,7 @@ class Pharmacie extends StatelessWidget {
        decoration: BoxDecoration(
          border: Border.all(
              width: 2,
-             color: Colors.yellow,
+             color: Color.fromARGB(255, 255, 206, 21),
          )
      ),
 
@@ -250,7 +249,7 @@ class Pharmacie extends StatelessWidget {
          nom,
          style: const TextStyle(
            fontSize: 10,
-           color: Colors.teal,
+           color: Color.fromARGB(255, 1, 186, 94),
 
          ) ,
        ),
@@ -261,7 +260,7 @@ class Pharmacie extends StatelessWidget {
          contact,
          style: const TextStyle(
            fontSize: 10,
-           color: Colors.teal,
+           color: Color.fromARGB(255, 1, 186, 94),
 
          ) ,
 

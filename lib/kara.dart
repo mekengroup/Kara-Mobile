@@ -14,7 +14,7 @@ class Kara extends StatelessWidget {
               width: 330.0,
               height: 50.0,
               decoration: const BoxDecoration(
-                color: Colors.yellow,
+                color: Color.fromARGB(255, 255, 206, 21),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10.0),
                   bottomRight: Radius.circular(10.0),
@@ -90,7 +90,7 @@ class Kara extends StatelessWidget {
               width: 330.0,
               height: 50.0,
               decoration: const BoxDecoration(
-                color: Colors.teal,
+                color: Color.fromARGB(255, 1, 186, 94),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10.0),
                   bottomRight: Radius.circular(10.0),

@@ -28,15 +28,15 @@ class _LutteState extends State<Lutte> {
               width: MediaQuery.of(context).size.width,
               height: 150.0,
               decoration: const BoxDecoration(
-                color: Colors.teal,
+                color: Color.fromARGB(255, 1, 186, 94),
               ),
               child: const Center(
                 child: Text(
                   'LA LUTTE EVALA',
                   style: TextStyle(
-                    color: Colors.yellow,
+                    color: Color.fromARGB(255, 255, 206, 21),
                     fontWeight: FontWeight.bold,
-                    fontSize: 30.0,
+                    fontSize: 32.0,
                   ),
                 ),
               ),
@@ -88,7 +88,7 @@ class _LutteState extends State<Lutte> {
               child: Text(
                 'A PROPOS DES EVENEMENTS',
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Color.fromARGB(255, 1, 186, 94),
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0,
                 ),
@@ -99,7 +99,7 @@ class _LutteState extends State<Lutte> {
               width: 330.0,
               height: 50.0,
               decoration: const BoxDecoration(
-                color: Colors.greenAccent,
+                color: Color.fromARGB(255, 207, 236, 217),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10.0),
                   bottomRight: Radius.circular(10.0),
@@ -111,7 +111,7 @@ class _LutteState extends State<Lutte> {
                 child: Text(
                   'EVALA',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 1, 186, 94),
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
                   ),
@@ -153,7 +153,7 @@ class _LutteState extends State<Lutte> {
               width: 330.0,
               height: 50.0,
               decoration: const BoxDecoration(
-                color: Colors.redAccent,
+                color: Color.fromARGB(255, 193, 123, 123),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10.0),
                   bottomRight: Radius.circular(10.0),
@@ -165,7 +165,7 @@ class _LutteState extends State<Lutte> {
                 child: Text(
                   'AKPEMA',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.red,
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
                   ),
@@ -223,7 +223,7 @@ class _LutteState extends State<Lutte> {
               width: 330.0,
               height: 50.0,
               decoration: const BoxDecoration(
-                color: Colors.orangeAccent,
+                color: Color.fromARGB(255, 226, 184, 122),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10.0),
                   bottomRight: Radius.circular(10.0),
@@ -235,7 +235,7 @@ class _LutteState extends State<Lutte> {
                 child: Text(
                   'HABYE',
                   style: TextStyle(
-                    color: Colors.white,
+                    color:  Color.fromARGB(255, 255, 206, 21),
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
                   ),

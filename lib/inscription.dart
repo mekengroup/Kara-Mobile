@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kara_events/lutte.dart';
 
+import 'accueil.dart';
 import 'connexion.dart';
 
 class Inscription extends StatefulWidget {
@@ -107,8 +108,8 @@ class _InscriptionState extends State<Inscription> {
     final loginButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Colors.teal,
-      shadowColor: Colors.greenAccent,
+      color: Color.fromARGB(255, 255, 206, 21),
+      shadowColor: Color.fromARGB(255, 255, 206, 21),
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
@@ -138,7 +139,7 @@ class _InscriptionState extends State<Inscription> {
               image: DecorationImage(
                 image: AssetImage("assets/ide.png"),
                 fit: BoxFit.fill,
-              )),
+              ),),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -209,6 +210,7 @@ class _InscriptionState extends State<Inscription> {
                   const SizedBox(height: 35.0),
 
                   numpieceField,
+
                   const SizedBox(height: 35.0),
 
                   passwordField,
@@ -228,13 +230,13 @@ class _InscriptionState extends State<Inscription> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Lutte()),
+                            builder: (context) => Accueil()),
                       );
                     },
                     child: const Text(
                       'Se connecter',
                       style: TextStyle(
-                        color: Colors.teal,
+                        color: Color.fromARGB(255, 1, 186, 94),
                         fontSize:23.0,
                           fontWeight: FontWeight.bold,
 
