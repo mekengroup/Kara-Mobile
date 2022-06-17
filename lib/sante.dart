@@ -16,7 +16,7 @@ class Sante extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor: Colors.teal,
+        backgroundColor: Color.fromARGB(255, 21, 108, 82),
 
       ),
 
@@ -32,7 +32,7 @@ class Sante extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color: Colors.teal,
+              color: Color.fromARGB(255, 21, 108, 82),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -109,7 +109,7 @@ class Sante extends StatelessWidget {
               textAlign: TextAlign.center,
               style:TextStyle(
                 fontSize: 27,
-                color: Colors.teal,
+                color:Color.fromARGB(255, 21, 108, 82),
                 fontWeight: FontWeight.bold,
 
 
@@ -182,7 +182,7 @@ class Sante extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 15,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -263,7 +263,7 @@ class Sante extends StatelessWidget {
             nom,
             style: const TextStyle(
               fontSize: 8,
-              color:  Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -274,7 +274,7 @@ class Sante extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 10,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
 

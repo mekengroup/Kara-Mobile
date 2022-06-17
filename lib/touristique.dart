@@ -15,7 +15,7 @@ class Touristique extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor:  Color.fromARGB(255, 1, 186, 94),
+        backgroundColor:  Color.fromARGB(255, 21, 108, 82),
       ),
 
       body: ListView(
@@ -159,7 +159,7 @@ class Touristique extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 13,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
 
             ) ,
@@ -170,7 +170,7 @@ class Touristique extends StatelessWidget {
             detail,
             style: const TextStyle(
               fontSize: 12,
-              color:  Color.fromARGB(255, 1, 186, 94),
+              color:  Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -186,8 +186,8 @@ class Touristique extends StatelessWidget {
               width: 135,
               padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
               decoration: BoxDecoration(
-                color:  Color.fromARGB(255, 1, 186, 94),
-                border: Border.all(color: Color.fromARGB(255, 1, 186, 94), width:2),
+                color:  Color.fromARGB(255, 21, 108, 82),
+                border: Border.all(color: Color.fromARGB(255, 21, 108, 82), width:2),
                 borderRadius: const BorderRadius.all(Radius.circular(5),
                 ),
               ),
@@ -243,7 +243,7 @@ class Touristique extends StatelessWidget {
             nom,
             style: const TextStyle(
               fontSize: 10,
-              color:  Color.fromARGB(255, 1, 186, 94),
+              color:  Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -254,7 +254,7 @@ class Touristique extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 10,
-              color:  Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
 

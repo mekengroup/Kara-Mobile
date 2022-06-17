@@ -15,8 +15,7 @@ class Articles extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 1, 186, 94),
-
+        backgroundColor:Color.fromARGB(255, 21, 108, 82),
       ),
 
     );

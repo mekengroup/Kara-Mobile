@@ -171,7 +171,7 @@ class Accomodation extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border.all(
                   width: 1.5,
-                  color: Color.fromARGB(255, 1, 186, 94),
+                  color: Color.fromARGB(255, 21, 108, 82),
 
                 )
             ),
@@ -183,7 +183,7 @@ class Accomodation extends StatelessWidget {
 
                 style: const TextStyle(
                   fontSize: 14,
-                  color: Color.fromARGB(255, 1, 186, 94),
+                  color: Color.fromARGB(255, 21, 108, 82),
                   fontWeight: FontWeight.bold,
 
 

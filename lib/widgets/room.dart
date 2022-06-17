@@ -50,7 +50,7 @@ class _RoomState extends State<Room>{
                     textAlign: TextAlign.left,
                     style: const TextStyle(
                       fontSize: 20.0,
-                      color: Colors.teal,
+                      color: Color.fromARGB(255, 21, 108, 82),
                     ),
                   ),
                 ),
@@ -60,7 +60,7 @@ class _RoomState extends State<Room>{
                   child: Text('${widget.price}f / jour',
                     textAlign: TextAlign.left,
                     style: const TextStyle(
-                      color:Colors.red,
+                     color: Color.fromARGB(255, 210, 27, 51),
                       fontSize: 20.0,
                     ),
                   ),
@@ -94,7 +94,7 @@ class _RoomState extends State<Room>{
                   padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    border: Border.all(color: Colors.teal, width:2),
+                    border: Border.all(color: Color.fromARGB(255, 21, 108, 82), width:2),
                     borderRadius: const BorderRadius.all(Radius.circular(5),
                     ),
                   ),
@@ -102,7 +102,7 @@ class _RoomState extends State<Room>{
                     child: Text('Demander la disponibilité',
                       style: TextStyle(
                         fontSize: 20.0,
-                        color: Colors.teal,
+                        color: Color.fromARGB(255, 21, 108, 82),
                       ),
 
                     ),

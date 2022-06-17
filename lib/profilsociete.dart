@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kara_events/agence.dart';
 import 'package:kara_events/article.dart';
 import 'package:kara_events/profilutilisateur.dart';
 
@@ -111,23 +112,12 @@ class _SocieteState extends State<Societe> {
     final loginButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(5.0),
-      color:  Color.fromARGB(255, 1, 186, 94),
-      shadowColor:  Color.fromARGB(255, 1, 186, 94),
+      color: Color.fromARGB(255, 21, 108, 82),
+      shadowColor: Color.fromARGB(255, 21, 108, 82),
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('KARA EVENTS',
-          style: TextStyle(
-            fontSize: 23.0,
-          ),
-        ),
 
-        elevation: 10.0,
-        centerTitle: true,
-        backgroundColor:  Color.fromARGB(255, 1, 186, 94),
-
-      ),
       body: Center(
 
         child: Container(
@@ -145,11 +135,11 @@ class _SocieteState extends State<Societe> {
                     width: 200.0,
                     height: 150.0,
                     decoration: const BoxDecoration(
-                      color:  Color.fromARGB(255, 1, 186, 94),
+                      color:  Color.fromARGB(255, 21, 108, 82),
                     ),
                     child: Center(
                       child: Stack(
-                        children: [
+                        children: const [
                           CircleAvatar(
                             radius: 100,
                             backgroundImage: AssetImage("assets/so.jpg",),
@@ -160,18 +150,125 @@ class _SocieteState extends State<Societe> {
                     ),
                   ),
 
-                  const SizedBox(height: 20.0),
+                  const SizedBox(height: 35.0),
+
+                  Row(
+                    children: [
+                      Container(
+                        width: 80.0,
+                        height: 27.0,
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 2,
+                              color:   Color.fromARGB(255, 21, 108, 82),
+                            )
+                        ),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Utilisateur()),
+                            );
+                          },
+                          child: const Text(
+                            'Profil',
+                            textAlign: TextAlign.center,
+
+                            style: TextStyle(
+                              color:  Color.fromARGB(255, 21, 108, 82),
+                              fontSize:16.0,
+                              fontWeight: FontWeight.bold,
+
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      const SizedBox(width: 20.0,),
+
+                      Container(
+                        width: 80.0,
+                        height: 27.0,
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 2,
+                              color:   Color.fromARGB(255, 21, 108, 82),
+                            )
+                        ),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Articles()),
+                            );
+                          },
+                          child: const Text(
+                            'Articles',
+                            textAlign: TextAlign.center,
+
+                            style: TextStyle(
+                              color:  Color.fromARGB(255, 21, 108, 82),
+                              fontSize:16.0,
+                              fontWeight: FontWeight.bold,
+
+                            ),
+                          ),
+                        ),
+                      ),
+
+
+                      const SizedBox(width: 20.0,),
+
+                      Container(
+                        width: 80.0,
+                        height: 27.0,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 21, 108, 82),
+                            border: Border.all(
+                              width: 2,
+                              color: Color.fromARGB(255, 21, 108, 82),
+                            )
+                        ),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Societe()),
+                            );
+                          },
+                          child: const Text(
+                            'Société',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize:16.0,
+                              fontWeight: FontWeight.bold,
+
+                            ),
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+
+                  const SizedBox(height: 30.0),
+
+
 
                   Container(
                     width: 300.0,
                     height: 50.0,
                     decoration: const BoxDecoration(
-                      color:  Color.fromARGB(255, 1, 186, 94),
+                      color:  Color.fromARGB(255, 21, 108, 82),
                       borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(10.0),
-                        bottomRight: Radius.circular(10.0),
-                        topRight: Radius.circular(10.0),
-                        topLeft: Radius.circular(10.0),
+                        bottomLeft: Radius.circular(5.0),
+                        bottomRight: Radius.circular(5.0),
+                        topRight: Radius.circular(5.0),
+                        topLeft: Radius.circular(5.0),
                       ),
                     ),
                     child: const Center(
@@ -185,6 +282,7 @@ class _SocieteState extends State<Societe> {
                       ),
                     ),
                   ),
+
                   const SizedBox(height: 10.0),
 
                   const SizedBox(height: 35.0),
@@ -234,10 +332,10 @@ class _SocieteState extends State<Societe> {
                         width: 90.0,
                         height: 35.0,
                         decoration: BoxDecoration(
-                          color:  Color.fromARGB(255, 1, 186, 94),
+                          color:  Color.fromARGB(255, 21, 108, 82),
                             border: Border.all(
                               width: 2,
-                              color: Color.fromARGB(255, 1, 186, 94),
+                              color: Color.fromARGB(255, 21, 108, 82),
                             )
                         ),
                         child: GestureDetector(
@@ -278,7 +376,7 @@ class _SocieteState extends State<Societe> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Articles()),
+                                  builder: (context) => Agence()),
                             );
                           },
                           child: const Text(

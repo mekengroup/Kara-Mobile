@@ -217,7 +217,7 @@ class Kara extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 16,
-              color: Colors.redAccent,
+              color: Color.fromARGB(255, 210, 27, 51),
 
             ) ,
           ),

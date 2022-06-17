@@ -16,7 +16,7 @@ class Boite extends StatelessWidget {
 
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor:Color.fromARGB(255, 1, 186, 94),
+        backgroundColor:Color.fromARGB(255, 21, 108, 82),
 
       ),
 
@@ -31,7 +31,7 @@ class Boite extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -94,7 +94,7 @@ class Boite extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 13,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -105,7 +105,7 @@ class Boite extends StatelessWidget {
             adresse,
             style: const TextStyle(
               fontSize: 12,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -121,8 +121,8 @@ class Boite extends StatelessWidget {
               width: 135,
               padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
               decoration: BoxDecoration(
-                color:Color.fromARGB(255, 1, 186, 94),
-                border: Border.all(color: Color.fromARGB(255, 1, 186, 94), width:2),
+                color:Color.fromARGB(255, 21, 108, 82),
+                border: Border.all(color: Color.fromARGB(255, 21, 108, 82), width:2),
                 borderRadius: const BorderRadius.all(Radius.circular(5),
                 ),
               ),

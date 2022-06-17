@@ -17,7 +17,7 @@ class Hotels extends StatelessWidget {
 
           elevation: 10.0,
           centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 1, 186, 94),
+          backgroundColor:Color.fromARGB(255, 21, 108, 82),
 
         ),
 
@@ -140,7 +140,7 @@ class Hotels extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style:TextStyle(
                       fontSize: 35,
-                      color: Color.fromARGB(255, 1, 186, 94),
+                      color: Color.fromARGB(255, 21, 108, 82),
                       fontWeight: FontWeight.bold
 
 
@@ -242,7 +242,7 @@ class Hotels extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 16,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -253,7 +253,7 @@ class Hotels extends StatelessWidget {
             lieu,
             style: const TextStyle(
               fontSize: 13,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -263,7 +263,7 @@ class Hotels extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 12,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -277,7 +277,7 @@ class Hotels extends StatelessWidget {
 
             style: const TextStyle(
               fontSize: 13,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -317,8 +317,8 @@ class Hotels extends StatelessWidget {
               width: 135,
               padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 1, 186, 94),
-                border: Border.all(color: Color.fromARGB(255, 1, 186, 94), width:2),
+                color: Color.fromARGB(255, 21, 108, 82),
+                border: Border.all(color: Color.fromARGB(255, 21, 108, 82), width:2),
                 borderRadius: const BorderRadius.all(Radius.circular(5),
                 ),
               ),
@@ -372,7 +372,7 @@ class Hotels extends StatelessWidget {
             nom,
             style: const TextStyle(
               fontSize: 10,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -383,7 +383,7 @@ class Hotels extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 10,
-              color:Color.fromARGB(255, 1, 186, 94),
+              color:Color.fromARGB(255, 21, 108, 82),
 
             ) ,
 

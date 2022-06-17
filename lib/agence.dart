@@ -1,66 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:kara_events/connexion.dart';
 import 'package:kara_events/profilsociete.dart';
+import 'package:kara_events/profilutilisateur.dart';
 
 import 'accueil.dart';
 import 'article.dart';
 import 'inscription.dart';
 
-class Utilisateur extends StatelessWidget {
-  const Utilisateur({Key? key}) : super(key: key);
+class Agence extends StatelessWidget {
+  const Agence({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mon profil',
-          style: TextStyle(
-            fontSize: 23.0,
-          ),
-        ),
-
-        actions: <Widget>[
-
-          PopupMenuButton(
-            onSelected: ((int value){
-
-            }),
-            itemBuilder: (_){
-              return[
-                PopupMenuItem(
-                  value: 1,
-                  child: GestureDetector(
-                      onTap:(){
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) =>  Societe()),
-                        );
-                      },
-                      child: Text("Ma société")),
-                ),
-
-                PopupMenuItem(
-                  value: 2,
-                  child: GestureDetector(
-                      onTap:(){
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) =>  Articles()),
-                        );
-                      },
-                      child: Text("Mes articles")),
-                ),
-
-              ];
-            },
-          )
-        ],
-
-        elevation: 10.0,
-        centerTitle: true,
-        backgroundColor:  Color.fromARGB(255, 21, 108, 82),
-
-      ),
 
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 50),
@@ -85,18 +37,17 @@ class Utilisateur extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 30.0),
+          const SizedBox(height: 50.0),
 
           Row(
             children: [
               Container(
-                width: 70.0,
+                width: 60.0,
                 height: 25.0,
                 decoration: BoxDecoration(
-                    color:  Color.fromARGB(255, 21, 108, 82),
                     border: Border.all(
                       width: 2,
-                      color: Color.fromARGB(255, 21, 108, 82),
+                      color:  Color.fromARGB(255, 21, 108, 82),
                     )
                 ),
                 child: GestureDetector(
@@ -110,8 +61,42 @@ class Utilisateur extends StatelessWidget {
                   child: const Text(
                     'Profil',
                     textAlign: TextAlign.center,
+
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 21, 108, 82),
+                      fontSize:16.0,
+                      fontWeight: FontWeight.bold,
+
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(width: 33.0,),
+
+              Container(
+                width: 90.0,
+                height: 25.0,
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color:   Color.fromARGB(255, 21, 108, 82),
+                    )
+                ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Societe()),
+                    );
+                  },
+                  child: const Text(
+                    'Ma société',
+                    textAlign: TextAlign.center,
+
+                    style: TextStyle(
+                      color:  Color.fromARGB(255, 21, 108, 82),
                       fontSize:15.0,
                       fontWeight: FontWeight.bold,
 
@@ -120,15 +105,16 @@ class Utilisateur extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(width: 38.0,),
+              const SizedBox(width: 33.0,),
 
               Container(
-                width: 80.0,
+                width: 75.0,
                 height: 25.0,
                 decoration: BoxDecoration(
+                    color:  Color.fromARGB(255, 21, 108, 82),
                     border: Border.all(
                       width: 2,
-                      color:   Color.fromARGB(255, 21, 108, 82),
+                      color: Color.fromARGB(255, 21, 108, 82),
                     )
                 ),
                 child: GestureDetector(
@@ -142,9 +128,81 @@ class Utilisateur extends StatelessWidget {
                   child: const Text(
                     'Articles',
                     textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize:15.0,
+                      fontWeight: FontWeight.bold,
+
+                    ),
+                  ),
+                ),
+              )
+
+            ],
+          ),
+
+          const SizedBox(height: 50,),
+
+
+
+          Row(
+            children: [
+              Container(
+                width: 125.0,
+                height: 25.0,
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Color.fromARGB(255, 210, 27, 51),
+                    )
+                ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Agence()),
+                    );
+                  },
+                  child: const Text(
+                    'Mes agences',
+                    textAlign: TextAlign.center,
 
                     style: TextStyle(
-                      color:  Color.fromARGB(255, 21, 108, 82),
+                      color: Color.fromARGB(255, 210, 27, 51),
+                      fontSize:15.0,
+                      fontWeight: FontWeight.bold,
+
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(width: 30.0,),
+
+              Container(
+                width: 118.0,
+                height: 25.0,
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Color.fromARGB(255, 210, 27, 51),
+                    )
+                ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Articles()),
+                    );
+                  },
+                  child: const Text(
+                    'Mes articles',
+                    textAlign: TextAlign.center,
+
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 210, 27, 51),
                       fontSize:15.0,
                       fontWeight: FontWeight.bold,
 
@@ -155,36 +213,6 @@ class Utilisateur extends StatelessWidget {
 
               const SizedBox(width: 38.0,),
 
-              Container(
-                width: 80.0,
-                height: 25.0,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      width: 2,
-                      color:  Color.fromARGB(255, 21, 108, 82),
-                    )
-                ),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Societe()),
-                    );
-                  },
-                  child: const Text(
-                    'Société',
-                    textAlign: TextAlign.center,
-
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 21, 108, 82),
-                      fontSize:15.0,
-                      fontWeight: FontWeight.bold,
-
-                    ),
-                  ),
-                ),
-              ),
 
             ],
           ),
@@ -198,19 +226,19 @@ class Utilisateur extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 21, 108, 82),
               borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(10.0),
-                bottomRight: Radius.circular(10.0),
-                topRight: Radius.circular(10.0),
-                topLeft: Radius.circular(10.0),
+                bottomLeft: Radius.circular(5.0),
+                bottomRight: Radius.circular(5.0),
+                topRight: Radius.circular(5.0),
+                topLeft: Radius.circular(5.0),
               ),
             ),
             child: const Center(
               child: Text(
-                'Profil Utilisateur',
+                'Meks Engineering Group(MEG)',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 30.0,
+                  fontSize: 20.0,
                 ),
               ),
             ),
@@ -231,7 +259,7 @@ class Utilisateur extends StatelessWidget {
                   )
               ),
 
-              child: const Text('NEVERDIE',
+              child: const Text('Meks Engineering Group(MEG)',
 
                 style: TextStyle(
                   fontSize: 14,
@@ -257,7 +285,7 @@ class Utilisateur extends StatelessWidget {
                   )
               ),
 
-              child: const Text('Leinad',
+              child: const Text('Agbalepedogan',
 
                 style: TextStyle(
                   fontSize: 14,
@@ -283,7 +311,7 @@ class Utilisateur extends StatelessWidget {
                   )
               ),
 
-              child: const Text('Haiti',
+              child: const Text('+22890915201',
 
                 style: TextStyle(
                   fontSize: 14,
@@ -309,7 +337,7 @@ class Utilisateur extends StatelessWidget {
                   )
               ),
 
-              child: const Text('Karnis-Haiti',
+              child: const Text('Ingénieurie informaique',
 
                 style: TextStyle(
                   fontSize: 14,
@@ -334,7 +362,7 @@ class Utilisateur extends StatelessWidget {
                   )
               ),
 
-              child: const Text('Jamaique',
+              child: const Text('Note de la société',
 
                 style: TextStyle(
                   fontSize: 14,
@@ -347,149 +375,25 @@ class Utilisateur extends StatelessWidget {
 
           const SizedBox(height: 10,),
 
-          Container(
-              width: 150,
-              height: 50,
-              padding: EdgeInsets.all(15.0),
 
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 1.5,
-                    color: Color.fromARGB(255, 21, 108, 82),
-
-                  )
-              ),
-
-              child: const Text('15Novembre1990',
-
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-
-                ) ,
-              )
-
-          ),
-
-          const SizedBox(height: 10,),
-
-          Container(
-              width: 150,
-              height: 50,
-              padding: EdgeInsets.all(15.0),
-
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 1.5,
-                    color: Color.fromARGB(255, 21, 108, 82),
-
-                  )
-              ),
-
-              child: const Text('neverdie@gmail.com',
-
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-
-                ) ,
-              )
-
-          ),
-
-          const SizedBox(height: 10,),
-
-          Container(
-              width: 150,
-              height: 50,
-              padding: EdgeInsets.all(15.0),
-
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 1.5,
-                    color:  Color.fromARGB(255, 21, 108, 82),
-
-                  )
-              ),
-
-              child: const Text('****',
-
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-
-                ) ,
-              )
-
-          ),
-
-          const SizedBox(height: 10,),
-
-          Container(
-              width: 150,
-              height: 50,
-              padding: EdgeInsets.all(15.0),
-
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 1.5,
-                    color:  Color.fromARGB(255, 21, 108, 82),
-
-                  )
-              ),
-
-              child: const Text('1145-5007-8455',
-
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-
-                ) ,
-              )
-
-          ),
-
-          const SizedBox(height: 10,),
-
-          Container(
-              width: 150,
-              height: 50,
-              padding: EdgeInsets.all(15.0),
-
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 1.5,
-                    color:  Color.fromARGB(255, 21, 108, 82),
-
-                  )
-              ),
-
-              child: const Text('+22800000',
-
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-
-                ) ,
-              )
-
-          ),
 
           const SizedBox(height: 30.0,),
+          const SizedBox(width: 100.0,),
 
 
-          Row(
+
+          Column(
             children: [
               Container(
-                width: 160.0,
-                height: 35.0,
+                width: 120.0,
+                height: 30.0,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 21, 108, 82),
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(10.0),
-                    bottomRight: Radius.circular(10.0),
-                    topRight: Radius.circular(10.0),
-                    topLeft: Radius.circular(10.0),
+                    bottomLeft: Radius.circular(2.0),
+                    bottomRight: Radius.circular(2.0),
+                    topRight: Radius.circular(2.0),
+                    topLeft: Radius.circular(2.0),
                   ),
                 ),
                 child: GestureDetector(
@@ -497,11 +401,12 @@ class Utilisateur extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Inscription()),
+                          builder: (context) => Utilisateur()),
                     );
                   },
                   child: const Text(
-                    'Se déconnecter',
+                    'Retour',
+
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -513,18 +418,19 @@ class Utilisateur extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(width: 60.0,),
+              const SizedBox(height: 50.0,),
+
 
               Container(
-                width: 90.0,
+                width: 170.0,
                 height: 35.0,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 210, 27, 51),
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(7.0),
-                    bottomRight: Radius.circular(7.0),
-                    topRight: Radius.circular(7.0),
-                    topLeft: Radius.circular(7.0),
+                    bottomLeft: Radius.circular(5.0),
+                    bottomRight: Radius.circular(5.0),
+                    topRight: Radius.circular(5.0),
+                    topLeft: Radius.circular(5.0),
                   ),
                 ),
                 child: GestureDetector(
@@ -541,7 +447,7 @@ class Utilisateur extends StatelessWidget {
 
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize:25.0,
+                      fontSize:28.0,
                       fontWeight: FontWeight.bold,
 
                     ),

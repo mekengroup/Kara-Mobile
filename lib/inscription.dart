@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kara_events/lutte.dart';
+import 'package:kara_events/profilutilisateur.dart';
 
 import 'accueil.dart';
 import 'connexion.dart';
@@ -116,7 +117,7 @@ class _InscriptionState extends State<Inscription> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const Connexion()),
+            MaterialPageRoute(builder: (context) => const Utilisateur()),
           );
         },
         child: Text("Créer un compte",
@@ -236,7 +237,7 @@ class _InscriptionState extends State<Inscription> {
                     child: const Text(
                       'Se connecter',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 1, 186, 94),
+                        color: Color.fromARGB(255, 21, 108, 82),
                         fontSize:23.0,
                           fontWeight: FontWeight.bold,
 

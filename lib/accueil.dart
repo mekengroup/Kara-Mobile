@@ -84,7 +84,7 @@ class _AccueilState extends State<Accueil> {
         ],
         elevation: 10.0,
         centerTitle: true,
-        backgroundColor:Color.fromARGB(255, 1, 186, 94),
+        backgroundColor:Color.fromARGB(255, 21, 108, 82),
       ),
       body: _pages[_selectIndexPage],
       bottomNavigationBar: BottomNavigationBar(
@@ -100,15 +100,15 @@ class _AccueilState extends State<Accueil> {
           },
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.home,), label: 'Accueil', backgroundColor: Color.fromARGB(255, 1, 186, 94)),
+                icon: Icon(Icons.home,), label: 'Accueil', backgroundColor:Color.fromARGB(255, 21, 108, 82)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_card_sharp), label: 'Accomodation', backgroundColor: Color.fromARGB(255, 1, 186, 94)),
+                icon: Icon(Icons.add_card_sharp), label: 'Accomodation', backgroundColor: Color.fromARGB(255, 21, 108, 82)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_month), label: 'Evenements', backgroundColor: Color.fromARGB(255, 1, 186, 94)),
+                icon: Icon(Icons.calendar_month), label: 'Evenements', backgroundColor: Color.fromARGB(255, 21, 108, 82)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.account_balance_rounded), label: 'Kara', backgroundColor: Color.fromARGB(255, 1, 186, 94)),
+                icon: Icon(Icons.account_balance_rounded), label: 'Kara', backgroundColor:Color.fromARGB(255, 21, 108, 82)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_call), label: 'Contact', backgroundColor: Color.fromARGB(255, 1, 186, 94)),
+                icon: Icon(Icons.add_call), label: 'Contact', backgroundColor:Color.fromARGB(255, 21, 108, 82)),
           ]),
     );
   }

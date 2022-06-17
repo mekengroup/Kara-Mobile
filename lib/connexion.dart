@@ -18,7 +18,6 @@ class Connexion extends StatelessWidget {
       theme: ThemeData(
         // This is the theme of your application.
 
-        primarySwatch: Colors.green,
       ),
       home: const MyHomePage(title: 'Page de connexion'),
     );
@@ -181,8 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 1, 186, 94),
-
+                      color: Color.fromARGB(255, 21, 108, 82),
                     ),),
                 ),
               ],
