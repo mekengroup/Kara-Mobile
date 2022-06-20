@@ -31,7 +31,7 @@ class Bar extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 21, 108, 82),
+              color: Color.fromARGB(255, 241, 147, 147),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -45,7 +45,7 @@ class Bar extends StatelessWidget {
               child: Text(
                 'Bars & Restaurants',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 210, 27, 51),
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),

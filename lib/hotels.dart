@@ -32,7 +32,7 @@ class Hotels extends StatelessWidget {
                 height: 50.0,
                 width: 50.0,
                 decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 248, 111, 111),
+                  color: Color.fromARGB(255, 241, 147, 147),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0),
@@ -46,7 +46,7 @@ class Hotels extends StatelessWidget {
                   child: Text(
                     'Hotels',
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 210, 27, 51),
                       fontWeight: FontWeight.bold,
                       fontSize: 30.0,
                     ),
@@ -57,10 +57,11 @@ class Hotels extends StatelessWidget {
               const SizedBox(height: 40),
 
 
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+
                 children: [
+
 
                   GestureDetector(
                     onTap: (){
@@ -74,9 +75,7 @@ class Hotels extends StatelessWidget {
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
-                    child: buildCard("Détails:Doté d'un bar, d'une terrasse et offrant une vue sur la ville, le Meka Hotel est situé à Kara, à 2,4 km du bureau de l'immigration. Il propose un restaurant, une réception ouverte 24h/24.","Contact:+228 26 61 06 14","Adresse: Kara Togo","Meka Hotel", "assets/mekahotel.png"),
-
-                  ),
+                    child: buildCard("Détails:Doté d'un bar, d'une terrasse et offrant une vue sur la ville, le Meka Hotel est situé à Kara, à 2,4 km du bureau de l'immigration. Il propose un restaurant, une réception ouverte 24h/24.","Contact:+228 26 61 06 14","Adresse: Kara Togo","Meka Hotel", "assets/mekahotel.png")),
 
                 ],),
 
@@ -98,7 +97,7 @@ class Hotels extends StatelessWidget {
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
-                    child:buildCard("Détails:Chambres ventilées autour de 8 000 FCFA, climatisées (TV, téléphone, eau chaude) entre 16 000 et 40 000 FCFA. Petit déjeuner complet autour de 2 500 FCFA, plats à 4 000 FCFA en moyenne. Bar.","Contact: +228 26 60 19 00","Adresse:Quartier Cofac","Hotel la Concorde", "assets/concorde.png"),
+                    child:buildCard("Détails:Chambres ventilées autour de 8 000 FCFA, climatisées (TV, téléphone, eau chaude) entre 16 000 et 40 000 FCFA. Petit déjeuner complet autour de 2 500 FCFA, plats à 4 000 FCFA en moyenne. Bar.","Contact: +228 26 60 19 00","Adresse:Quartier Cofac","Hotel la Concorde", "assets/concorde.png",),
 
                   ),
 
@@ -114,7 +113,7 @@ class Hotels extends StatelessWidget {
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>  Chambre()));
                     },
-                    child:buildCard("Détails: Très agréable dans un cadre verdoyant,la piscine est un atout pour cette structure  dont le personnel est très charmant avec des chambre confortables.", "Contact: +228 93 68 72 72","Addresse:Unnaed road","Hotel Sainte-Brigitte", "assets/hotelbri.png"),
+                    child:buildCard("Détails: Très agréable dans un cadre verdoyant,la piscine est un atout pour cette structure  dont le personnel est très charmant avec des chambre confortables.", "Contact: +228 93 68 72 72","Addresse:Unnaed road","Hotel Sainte-Brigitte", "assets/hotelbri.png"  ),
 
 
 
@@ -228,13 +227,15 @@ class Hotels extends StatelessWidget {
   buildCard(String detail,String contact,String lieu,String titre, String image) => Container(
       width: 170,
       height: 470,
-      decoration: BoxDecoration(
 
-      ),
 
       margin: const EdgeInsets.only(right: 12),
       child: Column(
+
+
+
         children: [
+
           Image.asset(image),
           const SizedBox(height: 2),
 
@@ -331,7 +332,9 @@ class Hotels extends StatelessWidget {
                         color:Colors.white,
                     ),
                     ),
-                  Icon(Icons.location_on),
+                  Icon(Icons.location_on,
+                    color: Colors.white,
+                  ),
 
                 ],
 

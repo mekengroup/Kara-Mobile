@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
       decoration: InputDecoration(
           contentPadding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
           hintText: "Email",
+
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
     );
@@ -152,6 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+
 
                 const SizedBox(height: 35.0),
                 emailField,

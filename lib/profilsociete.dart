@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kara_events/agence.dart';
+import 'package:kara_events/agencearticle.dart';
 import 'package:kara_events/article.dart';
 import 'package:kara_events/profilutilisateur.dart';
 
@@ -376,7 +376,7 @@ class _SocieteState extends State<Societe> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Agence()),
+                                  builder: (context) => AgenceArticle()),
                             );
                           },
                           child: const Text(

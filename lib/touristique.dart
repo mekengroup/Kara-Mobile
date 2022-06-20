@@ -29,7 +29,7 @@ class Touristique extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color:  Color.fromARGB(255, 1, 186, 94),
+              color: Color.fromARGB(255, 241, 147, 147),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -43,7 +43,7 @@ class Touristique extends StatelessWidget {
               child: Text(
                 'Lieux touristiques',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 210, 27, 51),
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),
@@ -82,21 +82,6 @@ class Touristique extends StatelessWidget {
 
           const SizedBox(height: 40),
 
-
-          const Text('AUTRES LIEUX TOURISTIQUES',
-              textAlign: TextAlign.center,
-              style:TextStyle(
-                fontSize: 26,
-                color:  Color.fromARGB(255, 1, 186, 94),
-                fontWeight: FontWeight.bold,
-
-
-
-              )
-
-          ),
-
-          const SizedBox(height: 10),
 
 
               Row(

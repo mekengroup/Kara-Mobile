@@ -4,11 +4,13 @@ import 'package:kara_events/profilsociete.dart';
 import 'package:kara_events/profilutilisateur.dart';
 
 import 'accueil.dart';
+import 'mesagences.dart';
 import 'article.dart';
 import 'inscription.dart';
+import 'mesarticles.dart';
 
-class Agence extends StatelessWidget {
-  const Agence({Key? key}) : super(key: key);
+class AgenceArticle extends StatelessWidget {
+  const AgenceArticle({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +94,7 @@ class Agence extends StatelessWidget {
                     );
                   },
                   child: const Text(
-                    'Ma société',
+                    'Articles',
                     textAlign: TextAlign.center,
 
                     style: TextStyle(
@@ -105,10 +107,10 @@ class Agence extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(width: 33.0,),
+              const SizedBox(width: 30.0,),
 
               Container(
-                width: 75.0,
+                width: 90.0,
                 height: 25.0,
                 decoration: BoxDecoration(
                     color:  Color.fromARGB(255, 21, 108, 82),
@@ -122,11 +124,11 @@ class Agence extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Articles()),
+                          builder: (context) => Societe()),
                     );
                   },
                   child: const Text(
-                    'Articles',
+                    'Ma société',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -148,8 +150,8 @@ class Agence extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 125.0,
-                height: 25.0,
+                width: 128.0,
+                height: 26.0,
                 decoration: BoxDecoration(
                     border: Border.all(
                       width: 2,
@@ -161,7 +163,7 @@ class Agence extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Agence()),
+                          builder: (context) => MesAgences()),
                     );
                   },
                   child: const Text(
@@ -170,7 +172,7 @@ class Agence extends StatelessWidget {
 
                     style: TextStyle(
                       color: Color.fromARGB(255, 210, 27, 51),
-                      fontSize:15.0,
+                      fontSize:16.0,
                       fontWeight: FontWeight.bold,
 
                     ),
@@ -178,11 +180,11 @@ class Agence extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(width: 30.0,),
+              const SizedBox(width: 25.0,),
 
               Container(
-                width: 118.0,
-                height: 25.0,
+                width: 120.0,
+                height: 26.0,
                 decoration: BoxDecoration(
                     border: Border.all(
                       width: 2,
@@ -194,7 +196,7 @@ class Agence extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Articles()),
+                          builder: (context) => MesArticles()),
                     );
                   },
                   child: const Text(
@@ -203,7 +205,7 @@ class Agence extends StatelessWidget {
 
                     style: TextStyle(
                       color: Color.fromARGB(255, 210, 27, 51),
-                      fontSize:15.0,
+                      fontSize:16.0,
                       fontWeight: FontWeight.bold,
 
                     ),

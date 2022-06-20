@@ -32,7 +32,7 @@ class Sante extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 21, 108, 82),
+              color: Color.fromARGB(255, 241, 147, 147),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -46,7 +46,7 @@ class Sante extends StatelessWidget {
               child: Text(
                 'Centres de santé',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 210, 27, 51),
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),
@@ -103,63 +103,6 @@ class Sante extends StatelessWidget {
 
             ],),
           const SizedBox(height: 40),
-
-
-          const Text('AUTRES CENTRES DE SANTE',
-              textAlign: TextAlign.center,
-              style:TextStyle(
-                fontSize: 27,
-                color:Color.fromARGB(255, 21, 108, 82),
-                fontWeight: FontWeight.bold,
-
-
-
-              )
-
-          ),
-
-          const SizedBox(height: 10),
-
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-
-                  Card("Contact:+228 00 00 00 00","PHARMACIE"),
-
-                  const SizedBox(height: 120),
-                  const SizedBox(width: 20),
-
-                  Card("Contact: +228 00 00 00 00","PHARMACIE"),
-
-                ],),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-
-                  Card("Contact:+228 00 00 00 00","PHARMACIE"),
-
-                  const SizedBox(height: 120),
-                  const SizedBox(width: 20),
-
-                  Card("Contact:+228 00 00 00 00 ","PHARMACIE"),
-
-                ],),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-
-                  Card("Contact:+228 00 00 00 00","PHARMACIE"),
-
-                  const SizedBox(height: 120),
-                  const SizedBox(width: 20),
-
-                  Card("Contact:+228 00 00 00 00","PHARMACIE"),
-
-                ],),
-
             ],
           )
 
@@ -192,7 +135,7 @@ class Sante extends StatelessWidget {
             contact,
             style: const TextStyle(
               fontSize: 11,
-              color: Colors.teal,
+              color: Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -208,8 +151,8 @@ class Sante extends StatelessWidget {
               width: 135,
               padding: const EdgeInsets.fromLTRB(8, 6, 7, 8),
               decoration: BoxDecoration(
-                color: Colors.teal,
-                border: Border.all(color: Colors.teal, width:2),
+                color: Color.fromARGB(255, 21, 108, 82),
+                border: Border.all(color: Color.fromARGB(255, 21, 108, 82), width:2),
                 borderRadius: const BorderRadius.all(Radius.circular(5),
                 ),
               ),
@@ -222,7 +165,9 @@ class Sante extends StatelessWidget {
                           color:Colors.white,
                         ),
                       ),
-                      Icon(Icons.location_on),
+                      Icon(Icons.location_on,
+                        color: Colors.white,
+                      ),
 
                     ],
 
@@ -232,62 +177,8 @@ class Sante extends StatelessWidget {
             ),
           ),
 
-
-
-
-
         ],
       )
-
-  );
-
-  Card(String contact,String nom) => Container(
-
-    child: Container(
-      width: 170,
-      height: 90,
-
-      decoration: BoxDecoration(
-          border: Border.all(
-            width: 2,
-            color: Color.fromARGB(255, 255, 206, 21),
-          )
-      ),
-
-
-      child: Column(
-        children: [
-          const SizedBox(height: 20),
-
-          Text(
-            nom,
-            style: const TextStyle(
-              fontSize: 8,
-              color: Color.fromARGB(255, 21, 108, 82),
-
-            ) ,
-          ),
-
-          const SizedBox(height: 10),
-
-          Text(
-            contact,
-            style: const TextStyle(
-              fontSize: 10,
-              color: Color.fromARGB(255, 21, 108, 82),
-
-            ) ,
-
-          ),
-
-
-
-        ],
-      ),
-
-
-
-    ),
 
   );
 

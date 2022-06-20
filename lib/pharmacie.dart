@@ -17,6 +17,7 @@ class Pharmacie extends StatelessWidget {
         elevation: 10.0,
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 21, 108, 82),
+
       ),
 
 
@@ -30,7 +31,7 @@ class Pharmacie extends StatelessWidget {
             height: 50.0,
             width: 50.0,
             decoration: const BoxDecoration(
-              color:  Color.fromARGB(255, 21, 108, 82),
+              color: Color.fromARGB(255, 241, 147, 147),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
@@ -44,7 +45,7 @@ class Pharmacie extends StatelessWidget {
               child: Text(
                 'Pharmacie',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 210, 27, 51),
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),
@@ -157,7 +158,7 @@ class Pharmacie extends StatelessWidget {
             titre,
             style: const TextStyle(
               fontSize: 12,
-              color: Color.fromARGB(255, 1, 186, 94),
+              color:Color.fromARGB(255, 21, 108, 82),
 
             ) ,
           ),
@@ -176,7 +177,8 @@ class Pharmacie extends StatelessWidget {
             adresse,
             style: const TextStyle(
               fontSize: 12,
-              color:Color.fromARGB(255, 21, 108, 82),
+              color: Color.fromARGB(255, 21, 108, 82),
+
             ) ,
           ),
 

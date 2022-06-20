@@ -8,7 +8,7 @@ class Frequence extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: const Text('FREQUENCE RADIO ',
+        title: const Text('Kara Events ',
           style: TextStyle(
             fontSize: 23.0,
           ),
@@ -26,6 +26,36 @@ class Frequence extends StatelessWidget {
         scrollDirection: Axis.vertical,
 
         children: [
+
+          const SizedBox(height: 30),
+
+          Container(
+            height: 50.0,
+            width: 50.0,
+            decoration: const BoxDecoration(
+              color: Color.fromARGB(255, 241, 147, 147),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10.0),
+                bottomRight: Radius.circular(10.0),
+                topRight: Radius.circular(10.0),
+                topLeft: Radius.circular(10.0),
+              ),
+            ),
+
+            child: const Center(
+
+              child: Text(
+                'Fréquences de radios',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 210, 27, 51),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30.0,
+                ),
+              ),
+            ),
+          ),
+
+          const SizedBox(height: 40),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

@@ -8,7 +8,7 @@ class Banque extends StatelessWidget {
     return Scaffold(
 
         appBar: AppBar(
-        title: const Text('BKARA EVENTS',
+        title: const Text('KARA EVENTS',
         style: TextStyle(
         fontSize: 23.0,
     ),
@@ -45,7 +45,7 @@ class Banque extends StatelessWidget {
               child: Text(
                 'Banques',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 241, 147, 147),
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),
